@@ -136,7 +136,7 @@ button:hover {
 
       max-width: 50%;
       z-index: 2;
-      margin-top: 90px;
+      margin-top: 20px;
       margin-left: 30px;
     }
 
@@ -149,10 +149,11 @@ color: rgb(237, 36, 36);
 
     .hero-content h1 {
         color: #000;
-      font-size: 67px;
+      font-size: 87px;
       margin-bottom: 20px;
       font-family:'Arial Narrow Bold', ;
       text-align: left;
+      font-weight: bold;
     }
 
     .hero-content h2 {
@@ -202,7 +203,7 @@ color: rgb(237, 36, 36);
 
  .hero-image img {
 position: absolute;
-  top: 50%;
+  top: 60%;
   left: 75%;
   transform: translate(-50%, -50%);
  margin-top: 90px;
@@ -216,14 +217,18 @@ position: absolute;
 }
 
 /* ✅ Mobile Responsive Media Query */
+
+
 @media (max-width: 768px) {
   .hero {
+    display: flex;
     flex-direction: column;
     align-items: center;
     padding: 1em;
   }
 
   .hero-image {
+    order: -1; /* ✅ Is line se image upar chali jaayegi */
     position: relative;
     width: 100%;
     display: flex;
@@ -241,11 +246,13 @@ position: absolute;
     z-index: auto;
   }
 
-  .hero-text {
+  .hero-content {
+    order: 1;
     max-width: 100%;
     text-align: center;
   }
 }
+
 
 
 
@@ -1016,7 +1023,7 @@ position: absolute;
 }
 
 .logo-container img {
-    max-height: 30px; /* Adjust logo size */
+    max-height: 90px; /* Adjust logo size */
     opacity: 0.7;
     transition: opacity 0.3s ease;
 }
@@ -1038,7 +1045,10 @@ position: absolute;
     }
 
     .logo-container img {
-        max-height: 25px; /* Adjust size for mobile */
+      height: 250%; /* Adjust size for mobile */
+            opacity: 0.7;
+    transition: opacity 0.3s ease;
+    width: 10%; /* Make logos responsive */
     }
 }
 
@@ -1219,8 +1229,9 @@ button[type="submit"] {
 
     .input-wrapper,
     button[type="submit"] {
-        height: auto;
+        /* height: auto; */
         padding: 15px;
+        margin-top: 10px;
     }
 
     input[type="email"],
