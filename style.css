@@ -262,6 +262,7 @@ position: absolute;
 .services-section {
   text-align: center;
   padding: 40px;
+  margin-top: 100px;
 }
 
 .category {
@@ -357,121 +358,108 @@ position: absolute;
 
 
 
-
-
-
-
-
 .top-destinations-section {
-    text-align: center;
-    padding: 40px;
+  text-align: center;
+  padding: 40px 20px;
 }
 
 .top-selling {
-    font-size: 14px;
-    color: #777;
-    margin-bottom: 5px;
-    letter-spacing: 0.5px;
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 5px;
+  letter-spacing: 0.5px;
 }
 
 .top-destinations-section h2 {
-    font-size: 28px;
-    color: #333;
-    margin-bottom: 30px;
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
 }
 
 .destinations-container {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    flex-wrap: wrap;
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .destination-card {
-    background-color: #fff;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-    width: 320px; /* Adjust as needed */
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  transition: all 0.3s ease;
 }
 
 .destination-card img {
-    width: 100%;
-    height: auto;
-    display: block;
+  width: 100%;
+height: 400px;
+  margin-top:40px;
+  object-fit: cover; /* ✅ Image properly fit */
+  display: block;
 }
 
 .destination-info {
-    padding: 20px;
-    text-align: left;
+  padding: 16px;
+  text-align: left;
 }
 
 .location-price {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
 }
 
 .location-price h3 {
-    font-size: 20px;
-    color: #333;
-    margin: 0;
+  font-size: 18px;
+  color: #333;
+  margin: 0;
 }
 
 .location-price .price {
-    font-size: 16px;
-    color: #555;
+  font-size: 16px;
+  color: #007bff;
+  font-weight: bold;
 }
 
 .trip-duration {
-    display: flex;
-    align-items: center;
-    color: #777;
-    font-size: 14px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #555;
+  gap: 8px;
 }
 
 .trip-duration img {
-    width: 16px;
-    height: auto;
-    margin-right: 8px;
+  width: 16px;
+  height: 20px;
+  object-fit: contain;
 }
 
-/* Optional: Subtle hover effect */
+/* Hover effect */
 .destination-card:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    transform: translateY(-2px);
-    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
+
+/* ✅ Responsive */
 @media (max-width: 768px) {
-    .top-destinations-section {
-        padding: 20px;
-    }
+  .destinations-container {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .top-destinations-section h2 {
-        font-size: 24px;
-    }
+  .destination-card {
+    width: 90%;
+  }
 
-    .destinations-container {
-        flex-direction: column;
-        align-items: center;
-    }
+  .destination-card img {
 
-    .destination-card {
-        width: 90%;
-        max-width: 100%;
-    }
+height: 100%
 
-    .location-price {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 5px;
-    }
-
-    .location-price h3,
-    .location-price .price {
-        font-size: 18px;
-    }
+}
 }
 
 
@@ -580,149 +568,127 @@ position: absolute;
     margin: 0;
 }
 
-.right-content {
-    flex: 1;
-    background-color: #f5f8fa; /* Light Gray */
-    padding: 40px;
-    display: flex;
-    justify-content: center;
-   
-    align-items: center;
-}
+
+
+
+
+
+
+
 
 .trip-card {
-    background-color: #fff;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-    width: 100%;
-    max-width: 360px; /* Adjust as needed */
-    overflow: hidden;
+  width: 100%;
+  max-width: 400px;
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  
+  
+  margin-left: 20px;
+
+
 }
 
-.trip-card img {
-    width: 100%;
-    height: auto;
-    display: flex;
-    /* border-radius-top-left: 12px;
-    border-radius-top-right: 12px; */
+.trip-image {
+  width: 100%;
+  height: auto;
 }
+
+.right-content {
+  margin-right:200px;
+}
+
 
 .card-info {
-    padding: 20px;
+  padding: 16px;
 }
 
 .card-info h3 {
-    color: #2c3e50;
-    font-size: 22px;
-    margin-bottom: 8px;
+  margin: 0;
+  font-size: 1.4rem;
 }
 
-.card-info .date {
-    color: #5e6977;
-    font-size: 14px;
-    margin-bottom: 15px;
+.date {
+  font-size: 0.9rem;
+  color: gray;
+  margin-bottom: 10px;
 }
 
-.details {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
+.icons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 12px;
 }
 
-.icons i {
-    color: #777;
-    font-size: 16px;
-    margin-right: 10px;
-    display: flex; /* To align image inside */
-    align-items: center;
-    justify-content: center;
-}
-
-.icons i img {
-    width: 20px; /* Adjust icon size */
-    height: 20px;
+.icons img {
+  width: 24px;
+  height: 24px;
 }
 
 .ongoing-trip {
-    text-align: right;
+  margin-top: 10px;
 }
 
 .ongoing-label {
-    background-color: #e0f7fa; /* Very Light Blue */
-    color: #00acc1; /* Cyan */
-    font-size: 12px;
-    padding: 5px 8px;
-    border-radius: 5px;
-    display: inline-block;
-    margin-bottom: 8px;
+  background-color: #ffe08a;
+  padding: 4px 8px;
+  font-size: 0.8rem;
+  border-radius: 8px;
+  display: inline-block;
+  margin-bottom: 8px;
 }
 
 .trip-to-rome h4 {
-    color: #2c3e50;
-    font-size: 16px;
-    margin-bottom: 5px;
+  margin: 0;
+  font-size: 1rem;
 }
 
 .progress-bar {
-    background-color: #f0f0f0; /* Light Gray */
-    border-radius: 5px;
-    height: 8px;
-    width: 100px;
-    overflow: hidden;
+  width: 100%;
+  background-color: #eee;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 6px;
 }
 
 .progress {
-    background-color: #4caf50; /* Green */
-    color: #fff;
-    height: 100%;
-    border-radius: 5px;
-    font-size: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background-color: #3ecf8e;
+  color: white;
+  padding: 4px;
+  font-size: 0.8rem;
+  border-radius: 10px;
 }
 
 .bottom-actions {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
 }
 
 .people-going {
-    color: #5e6977;
-    font-size: 14px;
-    display: flex; /* Align icon and text */
-    align-items: center;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.9rem;
 }
 
-.people-going i {
-    margin-right: 5px;
-    display: flex; /* To size the image */
-    align-items: center;
-    justify-content: center;
-}
-
-.people-going i img {
-    width: 16px; /* Adjust icon size */
-    height: 16px;
+.people-going img {
+  width: 20px;
 }
 
 .like-button {
-    background: none;
-    border: none;
-    color: #e74c3c; /* Red */
-    font-size: 20px;
-    cursor: pointer;
-    display: flex; /* To size the image */
-    align-items: center;
-    justify-content: center;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
-.like-button i img {
-    width: 20px; /* Adjust icon size */
-    height: 20px;
+.like-button img {
+  width: 54px;
+  height: 24px;
 }
+
 
 
 
@@ -753,13 +719,17 @@ position: absolute;
     }
 
     .icon-container {
-        margin-right: 0;
+        margin-right: 50;
         margin-bottom: 10px;
     }
-
+  
     .step-details h3 {
         font-size: 16px;
     }
+
+
+  
+
 
     .step-details p {
         font-size: 13px;
@@ -768,10 +738,15 @@ position: absolute;
     .right-content {
         padding: 20px;
     }
+.right-content {
+  margin-right: 200px /* या 30px तक बढ़ा सकते हो */
+}
+
 
     .trip-card {
         width: 100%;
-        max-width: 100%;
+          margin-right: 800px;
+        max-width:300%;
     }
 
     .card-info h3 {
@@ -1644,3 +1619,4 @@ footer {
     max-width: 100%;
   }
 }
+
