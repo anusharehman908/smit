@@ -739,14 +739,14 @@ height: 100%
         padding: 20px;
     }
 .right-content {
-  margin-right: 200px /* या 30px तक बढ़ा सकते हो */
+  margin-right: 200px 
 }
 
 
     .trip-card {
         width: 100%;
           margin-right: 800px;
-        max-width:300%;
+        max-width:900%
     }
 
     .card-info h3 {
@@ -1619,4 +1619,3 @@ footer {
     max-width: 100%;
   }
 }
-
