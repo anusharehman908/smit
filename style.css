@@ -964,63 +964,40 @@ height: 100%
 
 
 
-.top-logos {
-    margin-top: 90px;
-    background-color: #fff;
-    padding: 20px;
-    display: flex;
-    justify-content: space-around;
-    justify-items: center;
-    align-items: center;
-    width: 100%;
-    margin-top: 30px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+
+.logo-section {
+  padding: 40px 20px;
+  background-color: #ffffff;
 }
 
 .logo-container {
-    justify-items: center;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 150px;
 }
 
-.logo-container img {
-    max-height: 150px; /* Increased max height for desktop */
-    opacity: 0.7;
-    transition: opacity 0.3s ease;
-    width: auto; /* Adjust width automatically based on height */
+.logo {
+  max-width: 120px;
+  height: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease;
 }
 
-.logo-container img:hover {
-    opacity: 1;
+.logo:hover {
+  transform: scale(1.1);
 }
 
+/* Responsive for Mobile */
 @media (max-width: 768px) {
-    .top-logos {
-        padding: 15px;
-        margin-top: 20px;
-    }
+  .logo {
+    max-width: 90px;
+  }
 
-    .logo-container {
-        flex-direction: row; /* Keep logos in a row on mobile (you had column before) */
-        gap: 20px; /* Add spacing between logos */
-        overflow-x: auto; /* Enable horizontal scrolling if needed */
-        padding: 90px 0; /* Add some padding for scrolling */
-    }
-
-    .logo-container img {
-      /* Adjusted max height for mobile */
-        opacity: 0.7;
-         max-height: 950rem;
-         height: 900;
-        transition: opacity 0.3s ease;
-        width: auto; /* Adjust width automatically based on height */
-    }
+  .logo-container {
+    gap: 20px;
+  }
 }
-
-
 
 
 
