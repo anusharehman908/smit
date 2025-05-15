@@ -371,7 +371,67 @@ color: rgb(237, 36, 36);
 
 
 
-.top-destinations-section {
+
+
+
+
+
+
+.img, img {
+  gap: 90px; 
+ flex-wrap: wrap;
+justify-content: center;
+  display: flex;
+  margin-top:90px;
+  margin-bottom: 50px;
+  align-items: center;
+  text-align: center;
+margin-left: 20px;
+  border-radius: 40px;
+ 
+  
+}
+
+
+.img img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+  box-shadow: #000 0px 0px 20px;
+  border-radius: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .top-destinations-section {
   text-align: center;
   padding: 40px 20px;
 }
@@ -474,7 +534,7 @@ height: 100%
 
 }
 }
-
+ */
 
 
 
