@@ -272,100 +272,84 @@ color: rgb(237, 36, 36);
 
 
 
+
+
+
 .services-section {
   text-align: center;
-  padding: 40px;
-  margin-top: 100px;
+  position: relative;
+  padding: 40px 10px;
 }
 
 .category {
-  font-size: 14px;
-  color: #777;
-  margin-bottom: 10px;
+  color: #5E6282;
+  font-weight: 600;
   letter-spacing: 1px;
+  margin-bottom: 10px;
+  font-family: sans-serif;
 }
 
-.services-section h2 {
-  font-size: 48px;
-  color: #333;
-  font-weight: bold;
-  margin-bottom: 30px;
+.main-heading {
+  font-size: 36px;
+  color: #14183E;
+  margin-bottom: 40px;
 }
 
-.services-container {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  flex-wrap: wrap;
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  justify-items: center;
+  position: relative;
+  z-index: 2;
 }
 
 .service-card {
-  background-color: #fff;
-  border-radius: 8px;
-  padding: 30px;
-  width: 300px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-  text-align: left;
+  background: #fff;
+  padding: 25px 20px;
+  border-radius: 20px;
+  max-width: 270px;
+  text-align: center;
+  box-shadow: 0 0px 10px  rgb(162, 162, 162);
+}
+.service-card:hover{
+  background: #fff;
+  padding: 25px 20px;
+  border-radius: 20px;
+  max-width: 270px;
+  text-align: center;
+  box-shadow: 0 0px 30px  rgb(126, 123, 123);
 }
 
 .service-card img {
-  width: 50px;
-  height: auto;
-  margin-bottom: 15px;
+  max-width: 60px;
+  margin-bottom: 20px;
 }
 
 .service-card h3 {
-  font-size: 20px;
-  color: #333;
+  color: #1E1D4C;
+  font-size: 18px;
   margin-bottom: 10px;
+  font-family: sans-serif;
 }
 
 .service-card p {
+  font-family: sans-serif;
+  color: #5E6282;
   font-size: 14px;
-  color: #666;
-  line-height: 1.6;
-}
-
-/* Icon background styles */
-.service-card > img {
-  background-color: #f0f8ff;
-  padding: 15px;
-  border-radius: 10px;
-}
-
-.service-card:nth-child(2) > img {
-  background-color: #e6f9e6;
-}
-.service-card:nth-child(3) > img {
-  background-color: #f9e6e6;
-}
-.service-card:nth-child(4) > img {
-  background-color: #f0e6ff;
-}
-
-/* ✅ Mobile Responsive Media Query */
-@media (max-width: 768px) {
-  .services-section {
-    padding: 20px;
-  }
-
-  .services-section h2 {
-    font-size: 32px;
-  }
-
-  .services-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .service-card {
-    width: 90%;
-    max-width: 100%;
-  }
+  line-height: 1.5;
 }
 
 
 
+.pattern-img {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  max-width: 150px;
+  z-index: 1;
+  opacity: 0.2;
+}
 
 
 
