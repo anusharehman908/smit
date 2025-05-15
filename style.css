@@ -54,7 +54,8 @@ body{
 }
 
 .nav-links a:hover {
-  color: rgb(13, 158, 35);
+  color: rgb(249, 157, 19);
+  text-decoration: underline;
 }
 
 .menu-icon {
@@ -251,6 +252,18 @@ position: absolute;
     max-width: 100%;
     text-align: center;
   }
+  .hero-content h1 {
+    font-size: 4.5rem;
+    font-family: 'Arial Narrow Bold';
+    text-align: center;
+  }
+  .header {
+color: rgb(237, 36, 36);
+      padding: 20px;
+        font-size: 1.1rem;
+        text-align: center;
+       font-weight: bold;
+    }
 }
 
 
@@ -484,89 +497,6 @@ height: 100%
 
 
 
-.book-trip-section {
-    background-color: #fff;
-    border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-    display: flex;
-    width: 100%; /* Adjust as needed */
-    margin: 30px;
-    overflow-x: hidden;
-    
-}
-
-.left-content {
-    padding: 90px;
-    flex: 1;
-    text-align: left;
-}
-
-.easy-fast {
-    color: #5e6977;
-    font-size: 16px;
-    margin-bottom: 10px;
-}
-
-.left-content h2 {
-    color: #2c3e50;
-    font-weight: bold;
-    font-size: 32px;
-    line-height: 1.3;
-    margin-bottom: 30px;
-}
-
-.steps {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-}
-
-.step {
-    display: flex;
-    align-items: flex-start;
-}
-
-.icon-container {
-    background-color: #eab30d; /* Light Yellow */
-    color: #f39c12; /* Darker Yellow */
-    width: 50px;
-    height: 50px;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
-    margin-right: 20px;
-}
-
-.icon-container img {
-    width: 24px; /* Adjust icon size */
-    height: 24px;
-    border-radius: 90px;
-}
-
-.icon-container.orange {
-    background-color: #d4500e; /* Light Orange */
-    color: #e67e22; /* Darker Orange */
-}
-
-.icon-container.blue {
-    background-color: #08296c; /* Light Blue */
-    color: #3498db; /* Darker Blue */
-}
-
-.step-details h3 {
-    color: #2c3e50;
-    font-size: 18px;
-    margin-bottom: 5px;
-}
-
-.step-details p {
-    color: #5e6977;
-    font-size: 14px;
-    line-height: 1.6;
-    margin: 0;
-}
 
 
 
@@ -575,185 +505,273 @@ height: 100%
 
 
 
-
-.trip-card {
-  width: 100%;
-  max-width: 400px;
-  background-color: #fff;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  
-  
-  margin-left: 20px;
-
-
-}
-
-.trip-image {
-  width: 100%;
-  height: auto;
-}
-
-.right-content {
-  margin-right:200px;
-}
-
-
-.card-info {
-  padding: 16px;
-}
-
-.card-info h3 {
-  margin: 0;
-  font-size: 1.4rem;
-}
-
-.date {
-  font-size: 0.9rem;
-  color: gray;
-  margin-bottom: 10px;
-}
-
-.icons {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 12px;
-}
-
-.icons img {
-  width: 24px;
-  height: 24px;
-}
-
-.ongoing-trip {
-  margin-top: 10px;
-}
-
-.ongoing-label {
-  background-color: #ffe08a;
-  padding: 4px 8px;
-  font-size: 0.8rem;
-  border-radius: 8px;
-  display: inline-block;
-  margin-bottom: 8px;
-}
-
-.trip-to-rome h4 {
-  margin: 0;
-  font-size: 1rem;
-}
-
-.progress-bar {
-  width: 100%;
-  background-color: #eee;
-  border-radius: 10px;
-  overflow: hidden;
-  margin-top: 6px;
-}
-
-.progress {
-  background-color: #3ecf8e;
-  color: white;
-  padding: 4px;
-  font-size: 0.8rem;
-  border-radius: 10px;
-}
-
-.bottom-actions {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 16px;
-}
-
-.people-going {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  font-size: 0.9rem;
-}
-
-.people-going img {
-  width: 20px;
-}
-
-.like-button {
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
-.like-button img {
-  width: 54px;
-  height: 24px;
-}
-
-
-
-
-/* ✅ MOBILE MEDIA QUERY */
-@media (max-width: 768px) {
     .book-trip-section {
-        flex-direction: column;
-        margin: 15px;
-    }
+            display: flex;
+            padding: 40px;
+            gap: 30px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            align-items: flex-start;
+        }
 
-    .left-content {
-        padding: 30px 20px;
-        text-align: center;
-    }
+        .left-content {
+            flex: 1;
+        }
 
-    .left-content h2 {
-        font-size: 24px;
-    }
+        .easy-fast {
+            color: #555;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
 
-    .steps {
-        align-items: center;
-    }
+        .left-content h2 {
+            font-size: 2.5em;
+            color: #333;
+            margin-bottom: 25px;
+            line-height: 1.2;
+        }
 
-    .step {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
+        .steps {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
 
-    .icon-container {
-        margin-right: 50;
-        margin-bottom: 10px;
-    }
-  
-    .step-details h3 {
-        font-size: 16px;
-    }
+        .step {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
 
-.right-content {
-        margin-right: 50px;
-        padding: 15px;    /* Adjust padding */
-    }
+        .icon-container {
+            width: 50px;
+            height: 50px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+        }
 
-    .trip-card {
-        width: 100%;           /* Full width on mobile */
-        max-width: 100%;       /* Ensure the card uses full width */
-        margin-right: 0;      /* No margin on right side */
-        margin-bottom: 20px;  /* Add space below cards */
-    }
+        .icon-container img {
+            max-width: 30px;
+            max-height: 30px;
+        }
 
-    .card-info h3 {
-        font-size: 16px;  /* Smaller heading on mobile */
-    }
+        .step:nth-child(1) .icon-container {
+            background-color: #ffc107; /* Yellow */
+        }
 
-    .details {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 12px;
-    }
+        .step:nth-child(2) .icon-container {
+            background-color: #fd7e14; /* Orange */
+        }
 
-    .bottom-actions {
-        flex-direction: column;
-        gap: 12px;
-        align-items: flex-start;
-    }}
+        .step:nth-child(3) .icon-container {
+            background-color: #0d6efd; /* Blue */
+        }
+
+        .step-details h3 {
+            font-size: 1.2em;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .step-details p {
+            color: #777;
+            font-size: 0.9em;
+            line-height: 1.5;
+        }
+
+        .right-content {
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .trip-card {
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+            max-width: 350px;
+        }
+
+        .trip-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .card-info {
+            padding: 20px;
+        }
+
+        .card-info h3 {
+            font-size: 1.5em;
+            color: #333;
+            margin-bottom: 8px;
+        }
+
+        .date {
+            color: #555;
+            font-size: 0.9em;
+            margin-bottom: 15px;
+        }
+
+        .details {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+
+        .icons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .icons img {
+            width: 20px;
+            height: 20px;
+            opacity: 0.7;
+        }
+
+        .ongoing-trip {
+            background-color: #f0f8ff;
+            border-radius: 8px;
+            padding: 10px;
+            font-size: 0.85em;
+            color: #0d6efd;
+        }
+
+        .ongoing-label {
+            color: #555;
+            font-size: 0.8em;
+            margin-bottom: 5px;
+        }
+
+        .trip-to-rome h4 {
+            font-size: 1em;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .progress-bar {
+            background-color: #e9ecef;
+            border-radius: 5px;
+            height: 8px;
+            overflow: hidden;
+        }
+
+        .progress {
+            background-color: #0d6efd;
+            height: 100%;
+            width: 40%;
+            border-radius: 5px;
+            color: #fff;
+            font-size: 0.7em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .bottom-actions {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: #555;
+            font-size: 0.9em;
+        }
+
+        .people-going {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .people-going img {
+            width: 20px;
+            height: 20px;
+            opacity: 0.7;
+        }
+
+        .like-button {
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .like-button img {
+            width: 20px;
+            height: 20px;
+            opacity: 0.7;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .book-trip-section {
+                flex-direction: column;
+                padding: 20px;
+
+                gap: 40px;
+            }
+
+            .right-content {
+                justify-content: center;
+            }
+
+            .left-content h2 {
+                font-size: 2em;
+                margin-bottom: 20px;
+            }
+
+            .steps {
+                gap: 15px;
+            }
+
+            .step {
+                gap: 10px;
+            }
+
+            .icon-container {
+                width: 40px;
+                height: 40px;
+            }
+
+            .icon-container img {
+                max-width: 24px;
+                max-height: 24px;
+            }
+
+            .trip-card {
+                max-width: 100%;
+                margin-left: 90px;
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -946,12 +964,8 @@ height: 100%
 
 
 
-
-
-
-
 .top-logos {
-  margin-top: 90px;
+    margin-top: 90px;
     background-color: #fff;
     padding: 20px;
     display: flex;
@@ -965,7 +979,7 @@ height: 100%
 }
 
 .logo-container {
-  justify-items: center;
+    justify-items: center;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -973,15 +987,15 @@ height: 100%
 }
 
 .logo-container img {
-    max-height: 90px; /* Adjust logo size */
+    max-height: 150px; /* Increased max height for desktop */
     opacity: 0.7;
     transition: opacity 0.3s ease;
+    width: auto; /* Adjust width automatically based on height */
 }
 
 .logo-container img:hover {
     opacity: 1;
 }
-
 
 @media (max-width: 768px) {
     .top-logos {
@@ -990,17 +1004,46 @@ height: 100%
     }
 
     .logo-container {
-        flex-direction: column; /* Stack logos vertically */
-        gap: 10px; /* Add spacing between logos */
+        flex-direction: row; /* Keep logos in a row on mobile (you had column before) */
+        gap: 20px; /* Add spacing between logos */
+        overflow-x: auto; /* Enable horizontal scrolling if needed */
+        padding: 90px 0; /* Add some padding for scrolling */
     }
 
     .logo-container img {
-      height: 250%; /* Adjust size for mobile */
-            opacity: 0.7;
-    transition: opacity 0.3s ease;
-    width: 10%; /* Make logos responsive */
+      /* Adjusted max height for mobile */
+        opacity: 0.7;
+         max-height: 950rem;
+         height: 900;
+        transition: opacity 0.3s ease;
+        width: auto; /* Adjust width automatically based on height */
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1339,11 +1382,11 @@ footer {
 }
 
 .google-play {
-    background-image: url('google-play-badge.png'); /* Replace with actual path */
+    background-image: url('/Google\ Play.png'); /* Replace with actual path */
 }
 
 .app-store {
-    background-image: url('app-store-badge.png'); /* Replace with actual path */
+    background-image: url('/Google\ Play.png'); /* Replace with actual path */
 }
 
 .copyright {
@@ -1515,15 +1558,6 @@ footer {
 
 
 
-
-
-
-
-
-
-
-
-/* Mobile devices (up to 600px) */
 @media (max-width: 600px) {
   .nav-links {
     display: none;
