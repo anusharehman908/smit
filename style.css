@@ -721,8 +721,8 @@ height: 100%
 
             .right-content {
                 justify-content: center;
-                margin-right: 20px;
-
+/*                 margin-right: 20px;
+ */
             }
 
             .left-content h2 {
@@ -750,7 +750,7 @@ height: 100%
 
             .trip-card {
                 max-width: 100%;
-                margin-left: 10px;
+/*                 margin-left: 10px; */
                 margin-right: 50px;
 
             }
