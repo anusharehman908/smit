@@ -35,7 +35,9 @@ body{
   height: 40px;
   margin-right: 10px;
 }
-
+.sigup{
+  margin-bottom: 46px;
+}
 .nav-links {
   list-style: none;
   display: flex;
