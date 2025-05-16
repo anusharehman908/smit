@@ -273,6 +273,7 @@ color: rgb(237, 36, 36);
   text-align: center;
   position: relative;
   padding: 40px 10px;
+    margin-top: 40px;
 }
 
 .category {
@@ -325,6 +326,8 @@ color: rgb(237, 36, 36);
   font-size: 18px;
   margin-bottom: 10px;
   font-family: sans-serif;
+    text-align: center;
+
 }
 
 .service-card p {
