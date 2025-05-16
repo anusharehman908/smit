@@ -19,6 +19,7 @@ body{
   justify-content: space-between;
   align-items: center;
   position: sticky;
+  text-align: center;
   top: 0;
   z-index: 999;
 }
@@ -126,12 +127,21 @@ button:hover {
 
 
 
+
+
+
+
+
+
+
     .hero-content {
 
       max-width: 50%;
       z-index: 2;
-      margin-top: 20px;
+      margin-top: 9px;
       margin-left: 30px;
+    
+
     }
 
 .header {
@@ -144,7 +154,7 @@ color: rgb(237, 36, 36);
     .hero-content h1 {
         color: #000;
       font-size: 87px;
-      margin-bottom: 20px;
+      margin-bottom: 80px;
       font-family:'Arial Narrow Bold', ;
       text-align: left;
       font-weight: bold;
@@ -219,6 +229,8 @@ position: absolute;
     flex-direction: column;
     align-items: center;
     padding: 1em;
+      margin-bottom: 20px;
+
   }
 
   .hero-image {
@@ -227,7 +239,7 @@ position: absolute;
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
   }
 
   .hero-image img {
@@ -244,6 +256,8 @@ position: absolute;
     order: 1;
     max-width: 100%;
     text-align: center;
+      margin-bottom: 30px;
+
   }
   .hero-content h1 {
     font-size: 4.5rem;
@@ -256,6 +270,8 @@ color: rgb(237, 36, 36);
         font-size: 1.1rem;
         text-align: center;
        font-weight: bold;
+         margin-bottom: 30px;
+
     }
 }
 
@@ -265,7 +281,16 @@ color: rgb(237, 36, 36);
 
 
 
-  p
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -273,7 +298,6 @@ color: rgb(237, 36, 36);
   text-align: center;
   position: relative;
   padding: 40px 10px;
-    margin-top: 40px;
 }
 
 .category {
@@ -326,8 +350,6 @@ color: rgb(237, 36, 36);
   font-size: 18px;
   margin-bottom: 10px;
   font-family: sans-serif;
-    text-align: center;
-
 }
 
 .service-card p {
@@ -347,19 +369,6 @@ color: rgb(237, 36, 36);
   z-index: 1;
   opacity: 0.2;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -626,33 +635,6 @@ color: rgb(237, 36, 36);
 }
 
 
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -886,6 +868,46 @@ color: rgb(237, 36, 36);
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .testimonials-section {
     background-color: #fff;
     border-radius: 10px;
@@ -1058,15 +1080,14 @@ color: rgb(237, 36, 36);
 
 
 
-
-
-
-
-
-
-
-
- .clients-section {
+  
+  /* client */
+  
+  
+  
+  
+  
+  .clients-section {
     text-align: center;
     padding: 50px 20px;
   }
@@ -1096,6 +1117,7 @@ color: rgb(237, 36, 36);
   }
   
   
+
 
 
 
